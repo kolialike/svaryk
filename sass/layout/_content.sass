@@ -1,0 +1,74 @@
+.list-items
+	text-align: center
+	vertical-align: middle
+	display: block
+	height: 100%
+	&:before
+		content: ''
+		display: inline-block
+		height: 100%
+		width: 0
+		vertical-align: middle
+.list-item
+	display: inline-block
+	max-width: 300px
+	margin: auto
+	vertical-align: middle
+	padding: 50px 0px
+.list
+	text-align: left 
+	vertical-align: middle
+	display: inline-block
+	min-width: 300px
+	li 
+		padding: 10px 0px
+		font-size: 23px
+.buttom
+	background: #1fd46a
+	margin-top: 10px
+	padding: 10px 20px
+	color: #fff
+	float: left
+	+transition(0.6s)
+	+border-radius(6px)
+	&:hover
+		background: #13f16f
+		color: #545a5f
+.close
+	width: 19px
+	height: 30px
+	display: inline-block
+	vertical-align: middle
+	margin-left: 10px
+	&:before 
+		+transition(0.35s)
+		content: ""
+		background: #000
+		+rotate(45deg)
+		width: 2px
+		height: 25px
+		display: inline-block
+		margin: 0px -2px 0px 7px
+		&:hover
+			+rotate(0deg)
+	&:after
+		+transition(0.35s)
+		content: ""
+		background: #000
+		+rotate(135deg)
+		width: 2px
+		height: 25px
+		display: inline-block
+	&:hover
+		&:before
+			background: #239e57
+		&:after
+			background: #239e57
+
+
+
+
+
+
+
+
